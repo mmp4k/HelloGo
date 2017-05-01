@@ -1,11 +1,10 @@
 package main
 
 import (
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
 func TestHelloWorld(t *testing.T) {
-	if "Hello World" != HelloWorld() {
-		t.Fail()
-	}
+	assert.Equal(t, "Hello World", HelloWorld())
 }
